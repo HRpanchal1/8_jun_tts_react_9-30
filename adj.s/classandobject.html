@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let user = {
+        Lname : "patel",
+        Fname : "sameer",
+        userdata : {
+            nameofdata : "hari",
+            dataofage : 25
+        }
+
+        }
+        console.log(user.userdata);
+
+
+        class Data {
+            constructor(username , userage, userpassword){
+                this.username = username
+                this.userage = userage
+                this.userpassword = userpassword
+            }
+        }
+
+        let haresh = new Data("hersh" , 25 , "hersh@123")
+        console.log(haresh);
+        
+        let raj =  new Data("raj" , 26, "raj@123")
+        
+        console.log(raj);
+
+        class Product {
+            constructor(Productname , productprice, productmodel,productdiscount){
+                this.Productname = Productname
+                this.productprice = productprice
+                this.productmodel = productmodel
+                this.productdiscount = productdiscount
+            }
+        }
+
+        let bike = new Product("bike" , 1000000 , "r15" , "0%")
+        console.log(bike);
+
+        let car = new Product("car" , 5400000 , "bmw" , "5%")
+        console.log(car);
+
+        let data = new Product()
+
+    </script>
+
+</body>
+
+</html>
