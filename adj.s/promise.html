@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <SCript>
+
+        let p = new Promise((resolve , reject)=>{
+            let a = 1 + 1
+            if(a === 2){
+                resolve("done")
+            }
+            else{
+                reject("fail")
+            }
+        })
+        let h = new Promise((resolve , reject)=>{
+            let a = 1 + 1
+            if(a === 2){
+                resolve("done")
+            }
+            else{
+                reject("fail")
+            }
+        })
+
+        // console.log(p);
+
+        p.then((msg)=>{
+            console.log("this is " + msg);
+        }).catch((msg) =>{
+            console.log("this is " + msg);
+        })
+
+
+
+     </SCript>
+
+</body>
+</html>
